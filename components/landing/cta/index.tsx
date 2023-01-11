@@ -1,4 +1,5 @@
 import { FC } from 'react'
+import NextLink from 'next/link'
 
 const CTASection: FC = () => {
   return (
@@ -15,18 +16,24 @@ const CTASection: FC = () => {
 
         <div className='mt-8 lg:flex lg:mt-0 lg:flex-shrink-0'>
           <div className='lg:inline-flex rounded-md shadow'>
-            <span className='inline-flex w-full items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-green-700 hover:bg-green-800 shadow-lg shadow-green-800/80'>
+            <NextLink
+              href='mailto:cantte098@gmail.com?Subject=Estoy%20interesado%20en%20adquirir%20sus%20servicios.'
+              className='inline-flex w-full items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-green-700 hover:bg-green-800 shadow-lg shadow-green-800/80'
+            >
               Contáctanos
               <span className='text-white ml-2' aria-hidden='true'>
                 &rarr;
               </span>
-            </span>
+            </NextLink>
           </div>
 
           <div className='mt-3 rounded-md shadow lg:ml-3 lg:mt-0 lg:inline-flex'>
-            <span className='inline-flex w-full items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-green-700 bg-white hover:bg-gray-50'>
+            <NextLink
+              href='/about'
+              className='inline-flex w-full items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-green-700 bg-white hover:bg-gray-50'
+            >
               Leer más
-            </span>
+            </NextLink>
           </div>
         </div>
       </div>

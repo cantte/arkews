@@ -1,4 +1,5 @@
 import { FC } from 'react'
+import NextLink from 'next/link'
 
 const HeaderSection: FC = () => {
   return (
@@ -18,16 +19,22 @@ const HeaderSection: FC = () => {
           </p>
 
           <div className='mt-8 flex gap-x-4 sm:justify-center'>
-            <button className='text-base inline-flex px-6 py-3.5 font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 border border-transparent shadow-lg shadow-blue-800/80 focus:outline-none focus:ring-0'>
+            <NextLink
+              href='mailto:cantte098@gmail.com?Subject=Estoy%20interesado%20en%20adquirir%20sus%20servicios.'
+              className='text-base inline-flex px-6 py-3.5 font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 border border-transparent shadow-lg shadow-blue-800/80 focus:outline-none focus:ring-0'
+            >
               Contáctanos
               <span className='text-white ml-2' aria-hidden='true'>
                 &rarr;
               </span>
-            </button>
+            </NextLink>
 
-            <button className='text-base inline-flex px-6 py-3.5 font-medium text-center text-gray-100 rounded-lg border border-transparent hover:text-gray-200 focus:outline-none focus:ring-0'>
+            <NextLink
+              href='/about'
+              className='text-base inline-flex px-6 py-3.5 font-medium text-center text-gray-100 rounded-lg border border-transparent hover:text-gray-200 focus:outline-none focus:ring-0'
+            >
               Conoce más
-            </button>
+            </NextLink>
           </div>
         </div>
       </div>
